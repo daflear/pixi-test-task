@@ -7,11 +7,11 @@ export const Config = {
         "Game": Game
     },
     puzzleCoordinates: [
-        {x:383,y:294},
-        {x:825,y:263 },
+        {x:500,y:294},
+        {x:1100,y:263 },
         {x:286,y:551 },
-        {x:885,y:565 },
-        {x:900,y:790 },
+        {x:1100,y:565 },
+        {x:1100,y:790 },
         {x:350,y:790 },
     ],
     cellsPlacement :

@@ -88,7 +88,11 @@ export class Shape extends Sprite {
         this.texture = App.sprite(`figure${id}`).texture;
         this.anchor.set(.5);
         this.pivot = {x: pivot.x, y: pivot.y};
-        this.position = Config.puzzleCoordinates[id];
+        const newScreenWidth = window.innerWidth;
+        const newScreenHeight = window.innerHeight;
+        const positionRatioX = newScreenWidth / App.app.screen.width;
+        const positionRatioY = newScreenHeight / App.app.screen.height;
+        this.position = {x:Config.puzzleCoordinates[id].x * positionRatioX,y: Config.puzzleCoordinates[id].y * positionRatioY };
         this.interactive = true;
     }
 
