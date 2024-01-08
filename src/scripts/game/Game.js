@@ -2,7 +2,7 @@ import {App} from "../system/App";
 import {Scene} from "../system/Scene";
 import {Shape} from "../system/Shape";
 import gsap from 'gsap/all'
-
+import { sound } from '@pixi/sound';
 import * as PIXI from 'pixi.js';
 import {Config} from "./Config";
 
@@ -34,10 +34,7 @@ export class Game extends Scene {
                     y: Config.puzzleCoordinates[i].y * positionRatioY
                 });
         });
-
     }
-
-
     showModal() {
         const blurFilter = new PIXI.filters.BlurFilter();
         blurFilter.blur = 5;

@@ -6,9 +6,10 @@
   "scripts": {
     "build": "webpack --config webpack/prod.js ",
     "start": "webpack-dev-server --config webpack/base.js --open",
-    "deploy":"gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@pixi/sound": "^5.2.2",
     "gsap": "^3.12.4",
     "pixi.js": "^6.5.1"
   },

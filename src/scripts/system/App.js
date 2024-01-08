@@ -37,6 +37,10 @@ class Application {
         return new PIXI.Sprite(this.res(key));
     }
 
+    music(key) {
+        return this.loader.resources[key];
+    }
+
     start() {
         this.scenes.start("Game");
     }
